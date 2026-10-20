@@ -285,14 +285,14 @@ namespace MineSweeper
 
         private static string BuildIssueLink(Cell cell)
         {
-            return $"https://github.com/evaristocuesta/evaristocuesta/issues/new?title=revealcell%7C{cell.PosX}%7C{cell.PosY}" +
+            return $"https://github.com/SaiAkhil2006/SaiAkhil2006/issues/new?title=revealcell%7C{cell.PosX}%7C{cell.PosY}" +
                 $"&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+reveal+the+cell.+If+you+want+to+flag+" +
                 $"the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README.md+will+be+updated+after+some+minutes.";
         }
 
         private static string BuildIssueNewGameLink()
         {
-            return $"https://github.com/evaristocuesta/evaristocuesta/issues/new?title=newgame" +
+            return $"https://github.com/SaiAkhil2006/SaiAkhil2006/issues/new?title=newgame" +
                 $"&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+play+a+new+game." +
                 $"The+README.md+will+be+updated+after+some+minutes.";
         }
