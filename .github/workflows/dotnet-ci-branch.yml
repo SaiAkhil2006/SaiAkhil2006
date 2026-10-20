@@ -2,9 +2,9 @@ name: dotnet-ci-branch
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore MineSweeper
+      run: dotnet restore MineSweeper/MineSweeper.sln
     - name: Build
-      run: dotnet build --no-restore MineSweeper --configuration Release
+      run: dotnet build --no-restore MineSweeper/MineSweeper.sln --configuration Release
     - name: Test
-      run: dotnet test --no-build --verbosity normal MineSweeper --configuration Release
+      run: dotnet test --no-build --verbosity normal MineSweeper/MineSweeper.sln --configuration Release

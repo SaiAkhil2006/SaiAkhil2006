@@ -1,46 +1,117 @@
-name: "Minesweeper"
+name: Minesweeper
 
 on:
   issues:
     types: [opened]
 
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: minesweeper-${{ github.repository }}
+  cancel-in-progress: false
+
 jobs:
   play:
+    if: github.repository == 'SaiAkhil2006/SaiAkhil2006'
     runs-on: ubuntu-latest
-    if: startsWith(github.event.issue.title, 'revealcell|') || startsWith(github.event.issue.title, 'flagcell|') || startsWith(github.event.issue.title, 'newgame')
+
     steps:
-    - uses: actions/checkout@v6
-    - name: Close Issue
-      run: gh issue close ${{ github.event.issue.number }} --comment "Auto-closing this issue."
-      env:
-        GH_TOKEN: ${{ github.token }}
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v5
-      with:
-        dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore MineSweeper
-    - name: Build
-      run: dotnet build --no-restore --configuration Release MineSweeper
-    - name: Parse issue title
-      id: split
-      run: |
-        IFS='|' read -r cmd row col <<< "${{ github.event.issue.title }}"
-        echo "_0=$cmd" >> "$GITHUB_OUTPUT"
-        echo "_1=$row" >> "$GITHUB_OUTPUT"
-        echo "_2=$col" >> "$GITHUB_OUTPUT"
-    - name: Execute
-      run: | 
-        echo "Command: ${{ github.event.issue.user.login }} ${{ steps.split.outputs._0 }} - Cell(${{ steps.split.outputs._1 }}, ${{ steps.split.outputs._2 }})"
-        dotnet run --configuration Release --verbosity m --project ../../../MineSweeper.csproj -- ${{ github.event.issue.user.login }} ${{ steps.split.outputs._0 }} ${{ steps.split.outputs._1 }} ${{ steps.split.outputs._2 }}
-      working-directory: ./MineSweeper/MineSweeper/bin/Release/net8.0 
-    - name: Git
-      run: |
-        git config user.name evaristocuesta
-        git config user.email evaristocg@gmail.com
-        git add README.md
-        git add ./MineSweeper/Game/game.xml
-        git add ./MineSweeper/Game/last-moves.xml
-        git add ./MineSweeper/Game/top-moves.xml
-        git diff --quiet && git diff --staged --quiet || git commit -m "[MineSweeper] README.md updated"
-        git push origin master
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Parse issue title
+        id: parse
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+        run: |
+          valid=false
+          if [[ "$ISSUE_USER" =~ ^[A-Za-z0-9]([A-Za-z0-9-]{0,37}[A-Za-z0-9])?$ ]]; then
+            if [[ "$ISSUE_TITLE" == "newgame" ]]; then
+              command=newgame
+              row=0
+              column=0
+              valid=true
+            elif [[ "$ISSUE_TITLE" =~ ^(revealcell|flagcell)\|([0-9]{1,2})\|([0-9]{1,2})$ ]]; then
+              command="${BASH_REMATCH[1]}"
+              row=$((10#${BASH_REMATCH[2]}))
+              column=$((10#${BASH_REMATCH[3]}))
+
+              if (( row < 10 && column < 10 )); then
+                valid=true
+              fi
+            fi
+          fi
+
+          if [[ "$valid" == "true" ]]; then
+            echo "command=$command" >> "$GITHUB_OUTPUT"
+            echo "row=$row" >> "$GITHUB_OUTPUT"
+            echo "column=$column" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::Issue title was not a supported Minesweeper command."
+          fi
+          echo "valid=$valid" >> "$GITHUB_OUTPUT"
+
+      - name: Close invalid issue
+        if: steps.parse.outputs.valid != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: gh issue close "$ISSUE_NUMBER" --comment "This issue did not contain a valid Minesweeper command."
+
+      - name: Setup .NET
+        if: steps.parse.outputs.valid == 'true'
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore dependencies
+        if: steps.parse.outputs.valid == 'true'
+        run: dotnet restore MineSweeper/MineSweeper.sln
+
+      - name: Build
+        if: steps.parse.outputs.valid == 'true'
+        run: dotnet build --no-restore --configuration Release MineSweeper/MineSweeper.sln
+
+      - name: Execute
+        if: steps.parse.outputs.valid == 'true'
+        env:
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+          GAME_COMMAND: ${{ steps.parse.outputs.command }}
+          GAME_ROW: ${{ steps.parse.outputs.row }}
+          GAME_COLUMN: ${{ steps.parse.outputs.column }}
+        run: |
+          if [[ "$GAME_COMMAND" == "newgame" ]]; then
+            dotnet MineSweeper.dll "$ISSUE_USER" "$GAME_COMMAND"
+          else
+            dotnet MineSweeper.dll "$ISSUE_USER" "$GAME_COMMAND" "$GAME_ROW" "$GAME_COLUMN"
+          fi
+        working-directory: ./MineSweeper/MineSweeper/bin/Release/net8.0
+
+      - name: Commit and push game state
+        if: steps.parse.outputs.valid == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md MineSweeper/Game/game.xml MineSweeper/Game/last-moves.xml MineSweeper/Game/top-moves.xml
+
+          if ! git diff --cached --quiet; then
+            git commit -m "[Minesweeper] Update game state"
+            gh auth setup-git
+            git push origin HEAD:main
+          fi
+
+      - name: Close issue
+        if: steps.parse.outputs.valid == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: gh issue close "$ISSUE_NUMBER" --comment "Auto-closing this Minesweeper move."
