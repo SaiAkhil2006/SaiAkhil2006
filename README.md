@@ -13,6 +13,17 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+<a href="https://github.com/SaiAkhil2006/SaiAkhil2006">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SaiAkhil2006/SaiAkhil2006/main/dark_mode.svg">
+    <img alt="SaiAkhil2006's GitHub Profile README" src="https://raw.githubusercontent.com/SaiAkhil2006/SaiAkhil2006/main/light_mode.svg">
+  </picture>
+</a>
+
+
+[![GitHub Stats](https://github-stats-extended.vercel.app/api?username=SaiAkhil2006&show=reviews%2Cdiscussions_started%2Cdiscussions_answered%2Cprs_merged%2Cprs_merged_percentage%2Cprs_commented%2Cprs_reviewed%2Cissues_commented%2Ccontributions%2Call_time_contribs&show_icons=true&include_all_commits=true&theme=tokyonight)](https://github-stats-extended.vercel.app/api?username=SaiAkhil2006&show=reviews%2Cdiscussions_started%2Cdiscussions_answered%2Cprs_merged%2Cprs_merged_percentage%2Cprs_commented%2Cprs_reviewed%2Cissues_commented%2Ccontributions%2Call_time_contribs&show_icons=true&include_all_commits=true&theme=tokyonight)
+
+
 ## Do you want to play Minesweeper?
 
 Everyone is welcome to play Minesweeper. How do I play?
