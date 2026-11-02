@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfLastMoves xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <LastMoves>
+    <Move>revealcell(5, 1)</Move>
+    <User>SaiAkhil2006</User>
+    <DateTime>2026-11-02T08:49:12.4879294+00:00</DateTime>
+  </LastMoves>
+  <LastMoves>
     <Move>revealcell(4, 1)</Move>
     <User>ABHIRAM-afk</User>
     <DateTime>2026-11-02T08:40:36.1587933+00:00</DateTime>
