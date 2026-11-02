@@ -13,19 +13,42 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-## Do you want to play Minesweeper?
+## 🎮 Play Minesweeper!
 
-Everyone is welcome to play Minesweeper. How do I play?
-When you click a link (cell), it opens a GitHub issue with the command and cell position in the title. Submit the issue without editing the title to reveal the cell. To flag it, replace 'revealcell' with 'flagcell'. The issue triggers a GitHub Actions workflow that runs the .NET 8 console app and updates this README.
+Ever wanted to play Minesweeper without leaving GitHub? Now you can!
 
-Examples:
-  - revealcell|3|4
-  - flagcell|2|7
-  - newgame
+Everyone is welcome to play. No installation, no setup, and no additional tools required. Just click a cell and let GitHub Actions handle the rest.
 
-Watch this repository if you want to know when someone has played
+### 🕹️ How to Play
 
-Star this repository if you like it. 
+1. **Reveal a cell:** Click any cell on the Minesweeper board.
+2. **Submit the action:** A GitHub Issue will open with a pre-filled command and the selected cell's coordinates in the title.
+3. **Don't edit the title:** Simply submit the issue as it is.
+4. **Place a flag:** To mark a suspected mine, replace `revealcell` with `flagcell` in the issue title before submitting.
+5. **Watch the board update:** A GitHub Actions workflow processes your move, runs the .NET 8 game engine, and automatically updates this README with the latest board state.
+
+### ⚡ Available Commands
+
+| Command | Description |
+|---|---|
+| `revealcell\|3\|4` | Reveal the cell at row 3, column 4 |
+| `flagcell\|2\|7` | Place or remove a flag at row 2, column 7 |
+| `newgame` | Start a fresh game |
+
+### 📌 A Few Things to Remember
+
+- Coordinates are based on the board's row and column positions.
+- Don't modify the pre-filled issue title unless you're changing the action.
+- Wait for GitHub Actions to finish processing your move before making another one.
+- Be careful! One wrong click could end your game.
+
+### 🌟 Support the Project
+
+- **Watch** this repository to get notified whenever someone makes a move.
+- **Star** the repository if you enjoyed playing!
+- **Share** it with your friends and challenge them to beat the board.
+
+**Happy sweeping! Try not to blow up.**
 
 |   |   |   |   |   |   |   |   |   |   |
 | - | - | - | - | - | - | - | - | - | - |
@@ -56,4 +79,5 @@ Star this repository if you like it.
 |[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|2|
 
 
-[![GitHub Stats](https://github-stats-extended.vercel.app/api?username=SaiAkhil2006&show=reviews%2Cdiscussions_started%2Cdiscussions_answered%2Cprs_merged%2Cprs_merged_percentage%2Cprs_commented%2Cprs_reviewed%2Cissues_commented%2Ccontributions%2Call_time_contribs&show_icons=true&include_all_commits=true&theme=tokyonight)](https://github-stats-extended.vercel.app/api?username=SaiAkhil2006&show=reviews%2Cdiscussions_started%2Cdiscussions_answered%2Cprs_merged%2Cprs_merged_percentage%2Cprs_commented%2Cprs_reviewed%2Cissues_commented%2Ccontributions%2Call_time_contribs&show_icons=true&include_all_commits=true&theme=tokyonight)
+<!--[![GitHub Stats](https://github-stats-extended.vercel.app/api?username=SaiAkhil2006&show=reviews%2Cdiscussions_started%2Cdiscussions_answered%2Cprs_merged%2Cprs_merged_percentage%2Cprs_commented%2Cprs_reviewed%2Cissues_commented%2Ccontributions%2Call_time_contribs&show_icons=true&include_all_commits=true&theme=tokyonight)](https://github-stats-extended.vercel.app/api?username=SaiAkhil2006&show=reviews%2Cdiscussions_started%2Cdiscussions_answered%2Cprs_merged%2Cprs_merged_percentage%2Cprs_commented%2Cprs_reviewed%2Cissues_commented%2Ccontributions%2Call_time_contribs&show_icons=true&include_all_commits=true&theme=tokyonight)
+-->
