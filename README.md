@@ -43,6 +43,7 @@ Star this repository if you like it.
 ### Last Moves
 | User | Move |
 | - | - |
+|[@SaiAkhil2006](https://github.com/SaiAkhil2006)|revealcell(6, 1)|
 |[@SaiAkhil2006](https://github.com/SaiAkhil2006)|revealcell(4, 0)|
 |[@SaiAkhil2006](https://github.com/SaiAkhil2006)|revealcell(6, 2)|
 |[@SaiAkhil2006](https://github.com/SaiAkhil2006)|revealcell(9, 3)|
@@ -52,13 +53,12 @@ Star this repository if you like it.
 |[@SaiAkhil2006](https://github.com/SaiAkhil2006)|revealcell(0, 6)|
 |[@SaiAkhil2006](https://github.com/SaiAkhil2006)|flagcell(1, 6)|
 |[@SaiAkhil2006](https://github.com/SaiAkhil2006)|revealcell(5, 1)|
-|[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|revealcell(4, 1)|
 
 
 ### Top Moves
 | User | Moves |
 | - | - |
-|[@SaiAkhil2006](https://github.com/SaiAkhil2006)|10|
+|[@SaiAkhil2006](https://github.com/SaiAkhil2006)|11|
 |[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|2|
 
 
