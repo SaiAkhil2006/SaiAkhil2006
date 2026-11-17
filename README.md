@@ -44,6 +44,7 @@ Star this repository if you like it.
 | User | Move |
 | - | - |
 |[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|revealcell(6, 5)|
+|[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|revealcell(6, 5)|
 |[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|revealcell(6, 4)|
 |[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|revealcell(6, 4)|
 |[@SaiAkhil2006](https://github.com/SaiAkhil2006)|flagcell(3, 2)|
@@ -52,14 +53,13 @@ Star this repository if you like it.
 |[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|revealcell(0, 3)|
 |[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|revealcell(6, 8)|
 |[@SaiAkhil2006](https://github.com/SaiAkhil2006)|revealcell(3, 6)|
-|[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|revealcell(7, 2)|
 
 
 ### Top Moves
 | User | Moves |
 | - | - |
 |[@SaiAkhil2006](https://github.com/SaiAkhil2006)|29|
-|[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|11|
+|[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|12|
 
 
 [![GitHub Stats](https://github-stats-extended.vercel.app/api?username=SaiAkhil2006&show=reviews%2Cdiscussions_started%2Cdiscussions_answered%2Cprs_merged%2Cprs_merged_percentage%2Cprs_commented%2Cprs_reviewed%2Cissues_commented%2Ccontributions%2Call_time_contribs&show_icons=true&include_all_commits=true&theme=tokyonight)](https://github-stats-extended.vercel.app/api?username=SaiAkhil2006&show=reviews%2Cdiscussions_started%2Cdiscussions_answered%2Cprs_merged%2Cprs_merged_percentage%2Cprs_commented%2Cprs_reviewed%2Cissues_commented%2Ccontributions%2Call_time_contribs&show_icons=true&include_all_commits=true&theme=tokyonight)

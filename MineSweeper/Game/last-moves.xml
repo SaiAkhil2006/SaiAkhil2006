@@ -3,6 +3,11 @@
   <LastMoves>
     <Move>revealcell(6, 5)</Move>
     <User>ABHIRAM-afk</User>
+    <DateTime>2026-11-17T04:08:35.614724+00:00</DateTime>
+  </LastMoves>
+  <LastMoves>
+    <Move>revealcell(6, 5)</Move>
+    <User>ABHIRAM-afk</User>
     <DateTime>2026-11-17T04:08:03.0461945+00:00</DateTime>
   </LastMoves>
   <LastMoves>
@@ -44,10 +49,5 @@
     <Move>revealcell(3, 6)</Move>
     <User>SaiAkhil2006</User>
     <DateTime>2026-11-17T03:55:31.1048561+00:00</DateTime>
-  </LastMoves>
-  <LastMoves>
-    <Move>revealcell(7, 2)</Move>
-    <User>ABHIRAM-afk</User>
-    <DateTime>2026-11-17T03:55:07.2227738+00:00</DateTime>
   </LastMoves>
 </ArrayOfLastMoves>
