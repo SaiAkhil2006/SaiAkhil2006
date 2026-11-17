@@ -30,7 +30,7 @@ Star this repository if you like it.
 |   |   |   |   |   |   |   |   |   |   |
 | - | - | - | - | - | - | - | - | - | - |
 |![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|
-|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![2](MineSweeper/Resources/cell-2.jpg "2")|[![Not revealed](MineSweeper/Resources/cell-not-revealed.jpg "Not revealed")](https://github.com/SaiAkhil2006/SaiAkhil2006/issues/new?title=revealcell%7C3%7C1&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+reveal+the+cell.+If+you+want+to+flag+the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README.md+will+be+updated+after+some+minutes.)|![2](MineSweeper/Resources/cell-2.jpg "2")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|
+|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![2](MineSweeper/Resources/cell-2.jpg "2")|[![Flag](MineSweeper/Resources/cell-flag.jpg "Flag")](https://github.com/SaiAkhil2006/SaiAkhil2006/issues/new?title=revealcell%7C3%7C1&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+reveal+the+cell.+If+you+want+to+flag+the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README.md+will+be+updated+after+some+minutes.)|![2](MineSweeper/Resources/cell-2.jpg "2")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|
 |![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![2](MineSweeper/Resources/cell-2.jpg "2")|[![Not revealed](MineSweeper/Resources/cell-not-revealed.jpg "Not revealed")](https://github.com/SaiAkhil2006/SaiAkhil2006/issues/new?title=revealcell%7C3%7C2&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+reveal+the+cell.+If+you+want+to+flag+the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README.md+will+be+updated+after+some+minutes.)|![2](MineSweeper/Resources/cell-2.jpg "2")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|
 |![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|[![Not revealed](MineSweeper/Resources/cell-not-revealed.jpg "Not revealed")](https://github.com/SaiAkhil2006/SaiAkhil2006/issues/new?title=revealcell%7C6%7C3&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+reveal+the+cell.+If+you+want+to+flag+the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README.md+will+be+updated+after+some+minutes.)|![1](MineSweeper/Resources/cell-1.jpg "1")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|
 |![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![0](MineSweeper/Resources/cell-0.jpg "0")|![1](MineSweeper/Resources/cell-1.jpg "1")|[![Not revealed](MineSweeper/Resources/cell-not-revealed.jpg "Not revealed")](https://github.com/SaiAkhil2006/SaiAkhil2006/issues/new?title=revealcell%7C6%7C4&body=Just+push+%27Submit+new+issue%27+without+editing+the+title+if+you+want+to+reveal+the+cell.+If+you+want+to+flag+the+cell,+replace+%27revealcell%27+by+%27flagcell%27+in+the+title.+The+README.md+will+be+updated+after+some+minutes.)|![2](MineSweeper/Resources/cell-2.jpg "2")|![1](MineSweeper/Resources/cell-1.jpg "1")|![1](MineSweeper/Resources/cell-1.jpg "1")|
@@ -43,6 +43,7 @@ Star this repository if you like it.
 ### Last Moves
 | User | Move |
 | - | - |
+|[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|flagcell(3, 1)|
 |[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|revealcell(3, 0)|
 |[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|revealcell(0, 3)|
 |[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|revealcell(6, 8)|
@@ -52,14 +53,13 @@ Star this repository if you like it.
 |[@SaiAkhil2006](https://github.com/SaiAkhil2006)|newgame|
 |[@SaiAkhil2006](https://github.com/SaiAkhil2006)|revealcell(0, 0)|
 |[@SaiAkhil2006](https://github.com/SaiAkhil2006)|revealcell(1, 0)|
-|[@SaiAkhil2006](https://github.com/SaiAkhil2006)|flagcell(0, 1)|
 
 
 ### Top Moves
 | User | Moves |
 | - | - |
 |[@SaiAkhil2006](https://github.com/SaiAkhil2006)|28|
-|[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|7|
+|[@ABHIRAM-afk](https://github.com/ABHIRAM-afk)|8|
 
 
 [![GitHub Stats](https://github-stats-extended.vercel.app/api?username=SaiAkhil2006&show=reviews%2Cdiscussions_started%2Cdiscussions_answered%2Cprs_merged%2Cprs_merged_percentage%2Cprs_commented%2Cprs_reviewed%2Cissues_commented%2Ccontributions%2Call_time_contribs&show_icons=true&include_all_commits=true&theme=tokyonight)](https://github-stats-extended.vercel.app/api?username=SaiAkhil2006&show=reviews%2Cdiscussions_started%2Cdiscussions_answered%2Cprs_merged%2Cprs_merged_percentage%2Cprs_commented%2Cprs_reviewed%2Cissues_commented%2Ccontributions%2Call_time_contribs&show_icons=true&include_all_commits=true&theme=tokyonight)
